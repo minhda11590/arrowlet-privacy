@@ -1,0 +1,179 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Arrowlet Privacy</title>
+<meta name="description" content="Arrowlet collects no personal data. Privacy policy in English and Vietnamese.">
+<style>
+  :root {
+    --bg: #F4F1FF;
+    --bg-top: #DCD5FF;
+    --card: #FFFFFF;
+    --ink: #1B1547;
+    --dim: #5D5788;
+    --line: #E4DFFA;
+    --gold: #FFD23F;
+    --gold-deep: #D4A300;
+    --chip: #EEE9FF;
+    --ok: #12A46B;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #120E33;
+      --bg-top: #2A2170;
+      --card: #1E1850;
+      --ink: #FFFFFF;
+      --dim: #CFC9F5;
+      --line: #2F2768;
+      --chip: #2A2366;
+      --ok: #47D79A;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #120E33; --bg-top: #2A2170; --card: #1E1850; --ink: #FFFFFF;
+    --dim: #CFC9F5; --line: #2F2768; --chip: #2A2366; --ok: #47D79A;
+  }
+  * { box-sizing: border-box; }
+  html, body { margin: 0; }
+  body {
+    background: linear-gradient(180deg, var(--bg-top) 0, var(--bg) 340px) no-repeat, var(--bg);
+    color: var(--ink);
+    font: 400 17px/1.6 system-ui, -apple-system, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 720px; margin: 0 auto; padding: 28px 16px 56px; }
+  header { display: flex; flex-direction: column; align-items: center; text-align: center; gap: 10px; }
+  h1, h2 { font-family: ui-rounded, system-ui, sans-serif; font-weight: 800; line-height: 1.15; margin: 0; }
+  h1 { font-size: clamp(30px, 7vw, 40px); }
+  .app { font: 800 15px/1 system-ui, sans-serif; letter-spacing: .08em; text-transform: uppercase; color: var(--dim); }
+  .updated { color: var(--dim); font-size: 15px; margin: 0; }
+
+  .switch { display: inline-flex; background: var(--chip); border-radius: 999px; padding: 4px; margin-top: 8px; }
+  .switch button {
+    border: 0; background: transparent; color: var(--dim); cursor: pointer;
+    font: 800 15px/1 system-ui, sans-serif; padding: 10px 18px; border-radius: 999px; min-width: 112px;
+  }
+  .switch button[aria-pressed="true"] { background: var(--gold); color: #1B1547; box-shadow: 0 3px 0 var(--gold-deep); }
+  .switch button:focus-visible { outline: 3px solid var(--gold-deep); outline-offset: 2px; }
+
+  .hero {
+    margin: 26px 0 14px; padding: 20px; border-radius: 24px; background: var(--card);
+    border: 2px solid var(--line); text-align: center;
+  }
+  .hero p { margin: 0; font-size: 19px; font-weight: 800; }
+  .chips { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px; margin-top: 16px; }
+  @media (min-width: 560px) { .chips { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+  .chip {
+    display: flex; flex-direction: column; align-items: center; gap: 6px; padding: 14px 8px;
+    background: var(--chip); border-radius: 18px; font-weight: 800; font-size: 15px; line-height: 1.25;
+  }
+  .chip svg { width: 28px; height: 28px; color: var(--ok); }
+
+  section { background: var(--card); border: 2px solid var(--line); border-radius: 24px; padding: 20px; margin-top: 14px; }
+  section h2 { font-size: 22px; display: flex; align-items: center; gap: 10px; margin-bottom: 6px; }
+  section h2 .dot { width: 12px; height: 12px; border-radius: 50%; background: var(--gold); flex: none; box-shadow: 0 2px 0 var(--gold-deep); }
+  section p { margin: 6px 0 0; }
+  section ul { margin: 8px 0 0; padding-left: 22px; }
+  section li { margin: 4px 0; }
+  a { color: inherit; text-decoration-color: var(--gold-deep); text-decoration-thickness: 2px; text-underline-offset: 3px; }
+  footer { text-align: center; color: var(--dim); font-size: 14px; margin-top: 28px; }
+  [hidden] { display: none !important; }
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <div class="app">Arrowlet</div>
+    <h1 data-en="Privacy Policy" data-vi="Chính sách quyền riêng tư">Privacy Policy</h1>
+    <p class="updated" data-en="Last updated: 22 November 2026" data-vi="Cập nhật: 22 tháng 11, 2026">Last updated: 22 November 2026</p>
+    <div class="switch" role="group" aria-label="Language / Ngôn ngữ">
+      <button type="button" data-lang="en" aria-pressed="true">English</button>
+      <button type="button" data-lang="vi" aria-pressed="false">Tiếng Việt</button>
+    </div>
+  </header>
+
+  <div class="hero">
+    <p data-en="Arrowlet collects nothing about you." data-vi="Arrowlet không thu thập gì về bạn.">Arrowlet collects nothing about you.</p>
+    <div class="chips">
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l7 3v5c0 5-3.5 8.5-7 10-3.5-1.5-7-5-7-10V6z"/><path d="M9 12l2 2 4-4"/></svg><span data-en="No data collected" data-vi="Không thu thập dữ liệu">No data collected</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="5" width="18" height="14" rx="3"/><path d="M4 4l16 16"/></svg><span data-en="No ads" data-vi="Không quảng cáo">No ads</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7S2 12 2 12z"/><path d="M4 4l16 16"/></svg><span data-en="No tracking" data-vi="Không theo dõi">No tracking</span></div>
+      <div class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5a10 10 0 0 1 14 0"/><path d="M8.5 16a5 5 0 0 1 7 0"/><path d="M12 19.5h.01"/><path d="M3 3l18 18"/></svg><span data-en="Works offline" data-vi="Chơi ngoại tuyến">Works offline</span></div>
+    </div>
+  </div>
+
+  <!-- English -->
+  <div lang="en" data-body="en">
+    <section>
+      <h2><span class="dot"></span>What we collect</h2>
+      <p><strong>Nothing.</strong> Arrowlet does not collect, send to any server, share or sell any personal data.</p>
+      <ul>
+        <li>No accounts and no sign-in.</li>
+        <li>No ads, no analytics, no tracking, and no third-party code that collects data.</li>
+        <li>No internet needed: the game works fully offline.</li>
+        <li>No access to your camera, microphone, photos, contacts or location.</li>
+      </ul>
+    </section>
+    <section>
+      <h2><span class="dot"></span>What stays on your device</h2>
+      <p>Your progress (levels reached, stars, hats, the look and language you chose, and your settings) is saved on your iPhone or iPad, in the app's own storage. If you use Apple's device backup, it is part of your own backup. We never receive it. Deleting the app deletes it from the device; copies in your backups are yours to remove. We hold nothing, so there is nothing to ask us to delete.</p>
+    </section>
+    <section>
+      <h2><span class="dot"></span>Children</h2>
+      <p>Arrowlet is made for all ages. Because it collects no data at all, it collects no data from children.</p>
+    </section>
+    <section>
+      <h2><span class="dot"></span>Changes</h2>
+      <p>If this ever changes, for example if a future version adds an online feature, we will update this page and the App Store privacy details before that version is released.</p>
+    </section>
+  </div>
+
+  <!-- Tiếng Việt -->
+  <div lang="vi" data-body="vi" hidden>
+    <section>
+      <h2><span class="dot"></span>Dữ liệu thu thập</h2>
+      <p><strong>Không có.</strong> Arrowlet không thu thập, không gửi lên máy chủ, không chia sẻ và không bán bất kỳ dữ liệu cá nhân nào.</p>
+      <ul>
+        <li>Không có tài khoản, không đăng nhập.</li>
+        <li>Không quảng cáo, không phân tích, không theo dõi, không có mã của bên thứ ba thu thập dữ liệu.</li>
+        <li>Không cần internet: game chơi hoàn toàn ngoại tuyến.</li>
+        <li>Không dùng camera, micro, ảnh, danh bạ hay vị trí của bạn.</li>
+      </ul>
+    </section>
+    <section>
+      <h2><span class="dot"></span>Những gì nằm trên máy bạn</h2>
+      <p>Tiến độ chơi (màn đã tới, sao, mũ, giao diện và ngôn ngữ bạn chọn, cùng các cài đặt) được lưu trên iPhone hoặc iPad của bạn, trong bộ nhớ riêng của app. Nếu bạn dùng sao lưu thiết bị của Apple, dữ liệu nằm trong bản sao lưu của riêng bạn. Chúng tôi không hề nhận được. Xóa app là xóa dữ liệu khỏi máy; bản trong sao lưu do bạn tự quản lý và xóa. Chúng tôi không giữ gì nên bạn không cần gửi yêu cầu xóa.</p>
+    </section>
+    <section>
+      <h2><span class="dot"></span>Trẻ em</h2>
+      <p>Arrowlet dành cho mọi lứa tuổi. Vì không thu thập dữ liệu nào, game cũng không thu thập dữ liệu của trẻ em.</p>
+    </section>
+    <section>
+      <h2><span class="dot"></span>Thay đổi</h2>
+      <p>Nếu sau này có thay đổi, ví dụ một bản mới có tính năng trực tuyến, chúng tôi sẽ cập nhật trang này và phần quyền riêng tư trên App Store trước khi phát hành bản đó.</p>
+    </section>
+  </div>
+
+  <footer>© 2026 Arrowlet</footer>
+</div>
+<script>
+  function setLang(lang) {
+    document.documentElement.lang = lang;
+    document.querySelectorAll("[data-body]").forEach(b => b.hidden = b.dataset.body !== lang);
+    document.querySelectorAll("[data-en]").forEach(el => el.textContent = el.dataset[lang]);
+    document.querySelectorAll(".switch button").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === lang)));
+    document.title = lang === "vi" ? "Arrowlet · Quyền riêng tư" : "Arrowlet Privacy";
+    try { localStorage.setItem("lang", lang); } catch (e) {}
+  }
+
+  document.querySelectorAll(".switch button").forEach(b => b.addEventListener("click", () => setLang(b.dataset.lang)));
+
+  // ?lang=vi in the link wins; then the reader's last choice; then their browser's language.
+  let start = new URLSearchParams(location.search).get("lang");
+  if (!start) { try { start = localStorage.getItem("lang"); } catch (e) {} }
+  if (!start) start = (navigator.language || "").toLowerCase().startsWith("vi") ? "vi" : "en";
+  setLang(start === "vi" ? "vi" : "en");
+</script>
+</body>
+</html>
